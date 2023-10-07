@@ -17,7 +17,6 @@ import ReusableTable from "@/components/Table/Table";
 import { activeProjectHeader, projectRequestsHeader } from "../../utils/ConstantFields";
 import AuthService from "@/utils/AuthService";
 import secureLocalStorage from "react-secure-storage";
-import {toast } from 'react-toastify';
 import { useToast } from '@chakra-ui/react';
 import axios from 'axios';
 import JSZip from 'jszip';
