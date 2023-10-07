@@ -1,5 +1,6 @@
 import { Box, Button, FormControl, FormLabel, Heading, Input, VStack } from "@chakra-ui/react";
 import { useState } from "react";
+import Image from 'next/image';
 
 const SignUp = () => {
   const [email, setEmail] = useState("");

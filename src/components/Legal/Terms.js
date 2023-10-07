@@ -13,7 +13,7 @@ const Terms = () => {
 
       <Text mt="4">
         These terms and conditions outline the rules and regulations for the use
-        of DAJI AND ENGINEERS LLP's Website, located at https://www.daji.co.in/.
+        of DAJI AND ENGINEERS LLP&apos;s Website, located at https://www.daji.co.in/.
       </Text>
 
       <Text mt="4">
@@ -24,10 +24,10 @@ const Terms = () => {
 
       <Text mt="4">
         The following terminology applies to these Terms and Conditions, Privacy
-        Statement and Disclaimer Notice and all Agreements: "Client", "You" and
-        "Your" refers to you, the person log on this website and compliant to
-        the Company’s terms and conditions. "The Company", "Ourselves", "We",
-        "Our" and "Us", refers to our Company. "Party", "Parties", or "Us",
+        Statement and Disclaimer Notice and all Agreements: &quot;Client&quot;, &quot;You&quot; and
+        &quot;Your&quot; refers to you, the person log on this website and compliant to
+        the Company’s terms and conditions. &quot;The Company&quot;, &quot;Ourselves&quot;, &quot;We&quot;,
+        &quot;Our&quot; and &quot;Us&quot;, refers to our Company. &quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;,
         refers to both the Client and ourselves. All terms refer to the offer,
         acceptance and consideration of payment necessary to undertake the
         process of our assistance to the Client in the most appropriate manner
@@ -45,7 +45,7 @@ const Terms = () => {
 
       <Text mt="4">
         We employ the use of cookies. By accessing DAJI, you agreed to use
-        cookies in agreement with the DAJI AND ENGINEERS LLP's Privacy Policy.
+        cookies in agreement with the DAJI AND ENGINEERS LLP&apos;s Privacy Policy.
       </Text>
 
       <Text mt="4">
@@ -156,7 +156,7 @@ const Terms = () => {
         other Website information so long as the link: (a) is not in any way
         deceptive; (b) does not falsely imply sponsorship, endorsement or
         approval of the linking party and its products and/or services; and (c)
-        fits within the context of the linking party's site.
+        fits within the context of the linking party&apos;s site.
       </Text>
 
       <Text mt="4">
@@ -191,7 +191,7 @@ const Terms = () => {
         These organizations may link to our home page so long as the link: (a)
         is not in any way deceptive; (b) does not falsely imply sponsorship,
         endorsement or approval of the linking party and its products or
-        services; and (c) fits within the context of the linking party's site.
+        services; and (c) fits within the context of the linking party&apos;s site.
       </Text>
 
       <Text mt="4">
@@ -215,12 +215,12 @@ const Terms = () => {
         <ListItem>
           By use of any other description of our Website being linked to that
           makes sense within the context and format of content on the linking
-          party's site.
+          party&apos;s site.
         </ListItem>
       </UnorderedList>
 
       <Text mt="4">
-        No use of DAJI's logo or other artwork will be allowed for linking
+        No use of DAJI&apos;s logo or other artwork will be allowed for linking
         absent a trademark license agreement.
       </Text>
 

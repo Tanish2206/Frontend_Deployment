@@ -54,7 +54,7 @@ const PrivacyPolicy = () => {
           </Text>
           <Text fontSize="lg">
             means an entity that controls, is controlled by or is under common
-            control with a party, where "control" means ownership of 50% or more
+            control with a party, where &quot;control&quot; means ownership of 50% or more
             of the shares, equity interest or other securities entitled to vote
             for election of directors or other managing authority.
           </Text>
@@ -64,7 +64,7 @@ const PrivacyPolicy = () => {
             Company
           </Text>
           <Text fontSize="lg">
-            (referred to as either "the Company", "We", "Us" or "Our" in this
+            (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this
             Agreement) refers to DAJI AND ENGINEERS LLP, 389-390, PU4, Scheme no.54, opposite Retina Hospital,
 	  Vijay Nagar, Indore, Madhya Pradesh 452001
           </Text>
@@ -158,7 +158,7 @@ const PrivacyPolicy = () => {
       <Text fontSize="lg" mb="4">
         While using our Service, we may ask you to provide us with certain
         personally identifiable information that can be used to contact or
-        identify you ("Personal Data"). Personally identifiable information may
+        identify you (&quot;Personal Data&quot;). Personally identifiable information may
         include, but is not limited to:
       </Text>
       <UnorderedList mb="4">
@@ -188,10 +188,10 @@ const PrivacyPolicy = () => {
       <Text fontSize="lg" mb="4">
         We may also collect information that your browser sends whenever you
         visit our Service or when you access the Service by or through a mobile
-        device ("Usage Data").
+        device (&quot;Usage Data&quot;).
       </Text>
       <Text fontSize="lg" mb="4">
-        This Usage Data may include information such as your computer's Internet
+        This Usage Data may include information such as your computer&apos;s Internet
         Protocol address (e.g., IP address), browser type, browser version, the
         pages of our Service that you visit, the time and date of your visit,
         the time spent on those pages, unique device identifiers and other
@@ -207,7 +207,7 @@ const PrivacyPolicy = () => {
       <Text fontSize="lg" mb="4">
         We may also collect information that your browser sends whenever you
         visit our Service or when you access the Service by or through a mobile
-        device ("Usage Data").
+        device (&quot;Usage Data&quot;).
       </Text>
       <Text fontSize="lg" mb="4">
         We use this data for various purposes:
@@ -333,10 +333,10 @@ const PrivacyPolicy = () => {
         security.
       </Text>
       <Heading as="h1" fontSize="2xl" mb="4">
-        Children's Privacy
+        Children&apos;s Privacy
       </Heading>
       <Text fontSize="lg" mb="4">
-        Our Service does not address anyone under the age of 18 ("Children").
+        Our Service does not address anyone under the age of 18 (&quot;Children&quot;).
       </Text>
       <Text fontSize="lg" mb="4">
         We do not knowingly collect personally identifiable information from
@@ -349,7 +349,7 @@ const PrivacyPolicy = () => {
       <Text fontSize="lg" mb="4">
         If we need to rely on consent as a legal basis for processing your
         information and your country requires consent from a parent, we may
-        require your parent's consent before we collect and use that
+        require your parent&apos;s consent before we collect and use that
         information.
       </Text>
       <Heading as="h1" fontSize="2xl" mb="4">
@@ -358,7 +358,7 @@ const PrivacyPolicy = () => {
       <Text fontSize="lg" mb="4">
         Our Service may contain links to other websites that are not operated by
         us. If you click on a third-party link, you will be directed to that
-        third party's site. We strongly advise you to review the Privacy Policy
+        third party&apos;s site. We strongly advise you to review the Privacy Policy
         of every site you visit.
       </Text>
       <Text fontSize="lg" mb="4">
@@ -374,7 +374,7 @@ const PrivacyPolicy = () => {
       </Text>
       <Text fontSize="lg" mb="4">
         We will let you know via email and/or a prominent notice on our Service,
-        prior to the change becoming effective and update the "effective date"
+        prior to the change becoming effective and update the &quot;effective date&quot;
         at the top of this Privacy Policy.
       </Text>
       <Text fontSize="lg" mb="4">

@@ -213,5 +213,7 @@ const VerifyPhone = memo(
     );
   }
 );
+VerifyPhone.displayName = 'VerifyPhone';
+
 
 export default VerifyPhone;

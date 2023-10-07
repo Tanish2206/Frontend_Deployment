@@ -24,6 +24,7 @@ const ListHeader = ({ children }) => {
 
 export default function Footer() {
   const router = useRouter();
+  const bgg = useColorModeValue('gray.50', 'gray.900'); 
 
   return (
     <Box bg="gray.50" color="gray.700">
@@ -39,7 +40,7 @@ export default function Footer() {
                       {item}
                       <Tag
                         size={"sm"}
-                        bg={useColorModeValue("green.300", "green.800")}
+                        bg={bgg}
                         ml={2}
                         mt={1}
                         color={"white"}

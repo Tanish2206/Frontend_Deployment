@@ -155,5 +155,6 @@ const Signup = React.memo(({ handleStepChange, setData }) => {
     </Container>
   );
 });
+Signup.displayName = 'Signup';
 
 export default Signup;

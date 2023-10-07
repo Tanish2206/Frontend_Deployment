@@ -321,7 +321,7 @@ const Form3 = ({formData, updateFormData }) => {
           >
           {designerCategory?.map((elm)=>{
             return(
-              <option value={elm?.category}>{elm?.category}</option>
+              <option key={elm?.id} value={elm?.category}>{elm?.category}</option>
              )
           })}
         </Select>

@@ -26,6 +26,7 @@ const Feature = ({ text, icon, iconBg }) => {
 };
 
 export default function WhyUs() {
+  const bgg=useColorModeValue(feature.iconBg, `${feature?.iconBg}.900`)
 
   return (
     <Box bg="orange.200" my={12}>
@@ -49,7 +50,7 @@ export default function WhyUs() {
                   icon={
                     <Icon as={IoCheckmarkDoneCircleOutline} color={feature?.iconColor} w={5} h={5} />
                   }
-                  iconBg={useColorModeValue(feature.iconBg, `${feature?.iconBg}.900`)}
+                  iconBg={bgg}
                   text={feature?.text}
                   marginLeft={{ base: '0', md: '4' }}
                 />

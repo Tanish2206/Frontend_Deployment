@@ -71,7 +71,7 @@ const handleFormSubmit = async () => {
     
      const response = await AuthService.login(payload);
       if (response?.status === 200) {
-       console.log("Response For login",response,"isCheck",isCheck)
+      
         // Login successful
         const data = {
           mobile: Number(phoneNumber),

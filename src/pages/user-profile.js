@@ -3,7 +3,7 @@ import Footer from "@/components/Home/Footer"
 import secureLocalStorage from "react-secure-storage";
 import { useState,useEffect } from "react";
 import AuthService from "../utils/AuthService";
-export default function projects() {
+export default function Projects() {
 
   const Auth = secureLocalStorage.getItem("authToken");
   const userId = secureLocalStorage.getItem("id");
