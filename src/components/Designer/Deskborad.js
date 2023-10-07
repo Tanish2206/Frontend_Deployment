@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 import ReusableTable from "../Table/Table";
 import { activeProjectHeader, projectRequestsHeader } from "../../utils/ConstantFields";
-import AuthService from ".../utils/AuthService";
+import AuthService from "../../utils/AuthService";
 import secureLocalStorage from "react-secure-storage";
 import { useToast } from '@chakra-ui/react';
 import axios from 'axios';
