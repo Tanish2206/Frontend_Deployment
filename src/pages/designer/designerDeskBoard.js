@@ -36,7 +36,7 @@ import { FiMenu, FiBell, FiChevronDown ,FiCheckCircle, FiXCircle} from "react-ic
 import { LinkItemsD } from "../../utils/ConstantFields";
 
 import secureLocalStorage from "react-secure-storage";
-import AuthService from "@/Utils/AuthService";
+import AuthService from "../../utils/AuthService";
 
 import Deskboard from "../../components/Designer/Deskborad";
 import PersonalInfo from "../../components/Designer/PersonalInfo";
