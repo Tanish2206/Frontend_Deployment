@@ -8,7 +8,6 @@ import {
 
   import TableHeader from './TableHeader';
   import TableRow from './TableRow';
-  import { useState } from 'react';
   // Reusable table component
   const ReusableTable = ({
     headers = [],

@@ -13,7 +13,7 @@ import {
   FaWallet,
   FaStar,
 } from "react-icons/fa";
-import ReusableTable from "@/components/Table/Table";
+import ReusableTable from "../Table/Table";
 import { activeProjectHeader, projectRequestsHeader } from "../../utils/ConstantFields";
 import AuthService from "@/utils/AuthService";
 import secureLocalStorage from "react-secure-storage";
