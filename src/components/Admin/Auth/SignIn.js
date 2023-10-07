@@ -26,7 +26,7 @@ const SignUp = () => {
         width="100%"
       >
         <Box textAlign="center" mb={6}>
-          <Image src=".../public/logo.png" alt="Logo" />
+          <Image src="/logo.png" alt="Logo" />
         </Box>
         <VStack spacing={4} align="stretch">
           <Heading as="h1" size="lg" textAlign="center" mb={6}>
