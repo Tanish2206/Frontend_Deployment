@@ -13,9 +13,9 @@ import {
   FaWallet,
   FaStar,
 } from "react-icons/fa";
-import ReusableTable from "@/Components/table/table";
+import ReusableTable from "@/components/table/table";
 import { activeProjectHeader, projectRequestsHeader } from "../../utils/ConstantFields";
-import AuthService from "@/Utils/AuthService";
+import AuthService from "@/utils/AuthService";
 import secureLocalStorage from "react-secure-storage";
 import {toast } from 'react-toastify';
 import { useToast } from '@chakra-ui/react';
