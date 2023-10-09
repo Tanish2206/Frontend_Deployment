@@ -46,10 +46,25 @@ export default function SidebarWithHeader() {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedComponent, setSelectedComponent] = useState("DeskBoard");
-  const [designer, setDesigner] = useState({});
+ 
   const [api, setApi] = useState(true);
   const router = useRouter();
-
+  const userData = () => {
+    if (designerId) {
+      AuthService.getDesignerProfile(designerId)
+        .then((response) => {
+          if (response.status === 200) {
+            setDesigner(response?.data?.response_data);
+            setApi(false);
+          } else {
+            // Handle error
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
+  };
   const handleLinkItemClick = (name) => {
     setSelectedComponent(name);
     // router.push(`/${name.toLowerCase()}`);
@@ -71,22 +86,7 @@ export default function SidebarWithHeader() {
       router.push("/");
     }
   }
-  const userData = () => {
-    if (designerId) {
-      AuthService.getDesignerProfile(designerId)
-        .then((response) => {
-          if (response.status === 200) {
-            setDesigner(response?.data?.response_data);
-            setApi(false);
-          } else {
-            // Handle error
-          }
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    }
-  };
+ 
 
   useEffect(() => {
     if (api) {
