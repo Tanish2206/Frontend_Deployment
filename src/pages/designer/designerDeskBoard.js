@@ -49,7 +49,7 @@ export default function SidebarWithHeader() {
  
   const [api, setApi] = useState(true);
   const router = useRouter();
-  const userData = () => {
+  const designerData = () => {
     if (designerId) {
       AuthService.getDesignerProfile(designerId)
         .then((response) => {
@@ -90,7 +90,7 @@ export default function SidebarWithHeader() {
 
   useEffect(() => {
     if (api) {
-      userData();
+      designerData();
     }
   }, [api]);
   
