@@ -39,8 +39,8 @@ const Deskboard = () => {
     if (api) {
       userData();
     }
-  }, [api]);
-
+  }, [api, userData]); // Include userData in the dependency array
+  
   const userData = () => {
     if (storedId) {
       AuthService.getDesignerProfile(storedId 
@@ -64,36 +64,36 @@ const Deskboard = () => {
   useEffect(() => {
     const setProjectData = async () => {
       try {
-       
         const response = await AuthService?.getDesignerProject(storedId);
-        if(response?.status==200){
-         
+        if (response?.status === 200) {
           setDesignerProject(response?.data?.projects);
         }
-       // setDesignerProject(designerProjects);
+        // setDesignerProject(designerProjects);
       } catch (error) {
         throw Error(error);
       }
     };
     setProjectData();
-  }, [message]);
+  }, [message, storedId]); // Include storedId in the dependency array
+  
 
 
   useEffect(() => {
     const setProjectData = async () => {
       try {
         const response = await AuthService.getAcceptedProject(storedId);
-        if(response?.status==200){
+        if (response?.status === 200) {
           setAcceptedProject(response?.data?.projects);
           setMessage("");
         }
-       // setDesignerProject(designerProjects);
+        // setDesignerProject(designerProjects);
       } catch (error) {
         throw Error(error);
       }
     };
     setProjectData();
-  }, [message]);
+  }, [message, storedId]); // Include storedId in the dependency array
+  
  
     // Filter the data based on search query
 

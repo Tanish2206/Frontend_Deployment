@@ -4,89 +4,83 @@ import {
     Grid,
     Skeleton,
     useBreakpointValue,
-    Select,
-    Button,
-    Checkbox,
-    CheckboxGroup,
-    Stack,
-    Text,
+    
   } from '@chakra-ui/react';
   import { useEffect, useState } from 'react';
   import DesignSimple from './DesignSimple';
-  import DesignDetails from './DesignDetails';
   import DesignList  from './DesignList';
 import AuthService from '../../utils/AuthService';
-import { cookies } from 'next/dist/client/components/headers';
+
   // import FilterOptions from './FilterOptions';
-  const products = [
-      {
-        image:'/d4.jpg',
-        brand: 'Brand A',
-        name: 'Nice Chair, Pink',
-        price: 57,
-        originalPrice: 199,
-        category: 'Furniture',
-        dimension: '10x20',
-        plotArea: '200 sqft',
-        direction: 'North',
-      },
-      {
-        image:'d6.jpg',
-        brand: 'Brand A',
-        name: 'Nice Chair, Pink',
-        price: 57,
-        originalPrice: 199,
-        category: 'Furniture',
-        dimension: '10x20',
-        plotArea: '200 sqft',
-        direction: 'North',
-      },
-      {
-        image: 'd4.jpg',
-        brand: 'Brand A',
-        name: 'Nice Chair, Pink',
-        price: 57,
-        originalPrice: 199,
-        category: 'Furniture',
-        dimension: '10x20',
-        plotArea: '200 sqft',
-        direction: 'North',
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-        brand: 'Brand A',
-        name: 'Nice Chair, Pink',
-        price: 57,
-        originalPrice: 199,
-        category: 'Furniture',
-        dimension: '10x20',
-        plotArea: '200 sqft',
-        direction: 'North',
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-        brand: 'Brand A',
-        name: 'Nice Chair, Pink',
-        price: 57,
-        originalPrice: 199,
-        category: 'Furniture',
-        dimension: '10x20',
-        plotArea: '200 sqft',
-        direction: 'North',
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-        brand: 'Brand A',
-        name: 'Nice Chair, Pink',
-        price: 57,
-        originalPrice: 199,
-        category: 'Furniture',
-        dimension: '10x20',
-        plotArea: '200 sqft',
-        direction: 'North',
-      },
-    // Products data here...
-  ];
+  // const products = [
+  //     {
+  //       image:'/d4.jpg',
+  //       brand: 'Brand A',
+  //       name: 'Nice Chair, Pink',
+  //       price: 57,
+  //       originalPrice: 199,
+  //       category: 'Furniture',
+  //       dimension: '10x20',
+  //       plotArea: '200 sqft',
+  //       direction: 'North',
+  //     },
+  //     {
+  //       image:'d6.jpg',
+  //       brand: 'Brand A',
+  //       name: 'Nice Chair, Pink',
+  //       price: 57,
+  //       originalPrice: 199,
+  //       category: 'Furniture',
+  //       dimension: '10x20',
+  //       plotArea: '200 sqft',
+  //       direction: 'North',
+  //     },
+  //     {
+  //       image: 'd4.jpg',
+  //       brand: 'Brand A',
+  //       name: 'Nice Chair, Pink',
+  //       price: 57,
+  //       originalPrice: 199,
+  //       category: 'Furniture',
+  //       dimension: '10x20',
+  //       plotArea: '200 sqft',
+  //       direction: 'North',
+  //     },
+  //     {
+  //       image: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+  //       brand: 'Brand A',
+  //       name: 'Nice Chair, Pink',
+  //       price: 57,
+  //       originalPrice: 199,
+  //       category: 'Furniture',
+  //       dimension: '10x20',
+  //       plotArea: '200 sqft',
+  //       direction: 'North',
+  //     },
+  //     {
+  //       image: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+  //       brand: 'Brand A',
+  //       name: 'Nice Chair, Pink',
+  //       price: 57,
+  //       originalPrice: 199,
+  //       category: 'Furniture',
+  //       dimension: '10x20',
+  //       plotArea: '200 sqft',
+  //       direction: 'North',
+  //     },
+  //     {
+  //       image: 'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+  //       brand: 'Brand A',
+  //       name: 'Nice Chair, Pink',
+  //       price: 57,
+  //       originalPrice: 199,
+  //       category: 'Furniture',
+  //       dimension: '10x20',
+  //       plotArea: '200 sqft',
+  //       direction: 'North',
+  //     },
+  //   // Products data here...
+  // ];
   
   
   const DesignCategory = ({label,title}) => {
@@ -94,7 +88,7 @@ import { cookies } from 'next/dist/client/components/headers';
     const [show, setShow] = useState(false);
     const [showProduct, setShowProduct] = useState(null);
   const [designData,setDesignData]=useState();
-    const isLoading = products.length === 0;
+    const isLoading = designData.length === 0;
   
     const handleShowDetails = (data) => {
       setShowProduct(data);
@@ -113,7 +107,7 @@ AuthService.getDesign(title,label).then((Response)=>{
 ).catch((error)=>{
 })
    }
-  },[])
+  },[title,label])
    
 
   

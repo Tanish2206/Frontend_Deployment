@@ -71,20 +71,11 @@ export default function SidebarWithHeader() {
       router.push("/");
     }
   }
-
-  useEffect(() => {
-    if (api) {
-      userData();
-    }
-  }, [api]);
-
   const userData = () => {
-    if (storedId) {
-      AuthService.getDesignerProfile(designerId 
-        )
+    if (designerId) {
+      AuthService.getDesignerProfile(designerId)
         .then((response) => {
           if (response.status === 200) {
-           
             setDesigner(response?.data?.response_data);
             setApi(false);
           } else {
@@ -96,6 +87,14 @@ export default function SidebarWithHeader() {
         });
     }
   };
+
+  useEffect(() => {
+    if (api) {
+      userData();
+    }
+  }, [api]);
+  
+  
   
 
   return (
@@ -406,6 +405,7 @@ const MobileNav = ({ onOpen, onhandleProfile, ...rest }) => {
       <Flex alignItems="center">
         <Image
           src="/logo.png"
+          alt="Daji & Engineers LLP Logo"
           boxSize="30px"
           mr="2"
           onClick={() => router.push("/")}   

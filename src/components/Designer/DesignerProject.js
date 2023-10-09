@@ -15,20 +15,17 @@ export default function DesignerProject() {
   useEffect(() => {
     const setProjectData = async () => {
       try {
-       
         const response = await AuthService.getDesignerProject(storedId);
-        if(response?.status==200){
+        if (response?.status === 200) {
           setDesignerProject(response?.data?.projects);
-          
         }
-        
       } catch (error) {
-       
         throw Error(error);
       }
     };
     setProjectData();
-  }, []);
+  }, [storedId]); // Include storedId in the dependency array
+  
 
   const handleProject=(data)=>{
     setProjectData(data);

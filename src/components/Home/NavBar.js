@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 import secureLocalStorage from "react-secure-storage";
 import DesktopNav from "../NavBarComponent/DesktopNav";
 import MobileNav from "../NavBarComponent/MobileNav";
-import signup from "../../pages/signup";
+
 function NavBar() {
   const { isOpen, onToggle } = useDisclosure();
   const [isModalOpen, setIsOpen] = useState(false);
@@ -107,6 +107,7 @@ const onhandleClick=()=>{
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Image
             src="/logo.png"
+            alt="Daji & Engineers LLP Logo"
             boxSize="30px"
             mr="2"
             onClick={() =>{router.push("/")}}

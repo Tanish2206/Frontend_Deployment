@@ -9,7 +9,7 @@ import Login from "../Auth/Login";
 import Signup from "../Auth/Signup";
 import VerifyPhone from "../Auth/VerifyPhone";
 import Loader from '../../utils/loder';
-import Custom404 from '../../utils/Custom404';
+import Custom404 from '../../utils/Custom404'; 
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
@@ -154,7 +154,7 @@ if(!(secureLocalStorage.getItem("authToken"))){
      return ;
    }
 
-}, []);
+}, [Authtoken]);
 // login ...............logout ...........Authentication.....
 const handleOpenModal = (step) => {
   setCurrentStep(step);
@@ -209,7 +209,48 @@ const loadScript = async (src) => {
   });
 };
 
+const placeOrder = async (data) => {
 
+  const payload={
+    "amount": data?.amount,  
+    "currency": "INR",
+    "userId": secureLocalStorage.getItem("id"),
+    "designIds":[data?.id],
+  } 
+    await AuthService.payment(payload)
+      .then((response) => {
+        if (response.success) {
+          
+          const { orderId, amount } = response?.transactionOrder;
+  
+          const options = {
+            key: process.env.RazorPayKey, // Enter the Key ID generated from the Dashboard
+            amount: amount,
+            currency: "INR",
+            name: "Daji",
+            description: "",
+            image: 'logo.png' ,
+            order_id: orderId,
+            handler: async function (response) {
+              paymentVerify(response);
+            },
+             prefill: {
+              name: `${UserData?.firstNam}-${UserData?.lastName} `,
+              email: UserData?.email,
+              contact: `91${UserData?.mobile}`,
+             },
+            theme: {
+              color: "#61DAFB",
+            },
+          };
+          const paymentObject = new window.Razorpay(options);
+          paymentObject.open();
+        }
+      })
+      .catch((error) => {
+        return error.response;
+      });
+  };
 const handleBuyNow = useCallback((data, download) => {
 
   if (secureLocalStorage.getItem("authToken") && secureLocalStorage.getItem("authToken") !== "") {
@@ -228,51 +269,10 @@ const handleBuyNow = useCallback((data, download) => {
     setChangeUrl(download);
     return ;
   }
-}, []);
+}, [Authtoken, placeOrder]);
 
 
-const placeOrder = async (data) => {
 
-const payload={
-  "amount": data?.amount,  
-  "currency": "INR",
-  "userId": secureLocalStorage.getItem("id"),
-  "designIds":[data?.id],
-} 
-  await AuthService.payment(payload)
-    .then((response) => {
-      if (response.success) {
-        
-        const { orderId, amount } = response?.transactionOrder;
-
-        const options = {
-          key: process.env.RazorPayKey, // Enter the Key ID generated from the Dashboard
-          amount: amount,
-          currency: "INR",
-          name: "Daji",
-          description: "",
-          image: 'logo.png' ,
-          order_id: orderId,
-          handler: async function (response) {
-            paymentVerify(response);
-          },
-           prefill: {
-            name: `${UserData?.firstNam}-${UserData?.lastName} `,
-            email: UserData?.email,
-            contact: `91${UserData?.mobile}`,
-           },
-          theme: {
-            color: "#61DAFB",
-          },
-        };
-        const paymentObject = new window.Razorpay(options);
-        paymentObject.open();
-      }
-    })
-    .catch((error) => {
-      return error.response;
-    });
-};
 
 const paymentVerify = async (response) => {
   

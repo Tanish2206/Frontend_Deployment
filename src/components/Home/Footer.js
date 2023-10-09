@@ -81,12 +81,14 @@ export default function Footer() {
             ml: 8,
           }}
         >
-          <Image
-            src="/logo.png"
-            boxSize="50px"
-            onClick={() => router.push("/")}
-            style={{ cursor: "pointer" }}
-          />
+        <Image
+        src="/logo.png"
+        alt="Daji & Engineers LLP Logo"
+        boxSize="50px"
+        onClick={() => router.push("/")}
+        style={{ cursor: "pointer" }}
+      />
+      
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
           © 2023 Daji & Engineers LLP. All rights reserved

@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react';
 import { IoCheckmarkDoneCircleOutline } from 'react-icons/io5';
 import { WhyUsfeatures } from '../../utils/ConstantFields';
+
 const Feature = ({ text, icon, iconBg }) => {
   return (
     <Stack direction="row" align="center">
@@ -26,7 +27,7 @@ const Feature = ({ text, icon, iconBg }) => {
 };
 
 export default function WhyUs() {
-  const bgg=useColorModeValue(feature.iconBg, `${feature?.iconBg}.900`)
+  const iconBg = useColorModeValue('gray.100', 'gray.700'); // Move the hook outside of the map function
 
   return (
     <Box bg="orange.200" my={12}>
@@ -41,7 +42,7 @@ export default function WhyUs() {
             </Text>
             <Stack
               spacing={4}
-              divider={<StackDivider borderColor={useColorModeValue('gray.100', 'gray.700')} />}
+              divider={<StackDivider borderColor={iconBg} />} 
               marginLeft={{ base: '0', md: '4' }}
             >
               {WhyUsfeatures?.map((feature, index) => (
@@ -50,7 +51,7 @@ export default function WhyUs() {
                   icon={
                     <Icon as={IoCheckmarkDoneCircleOutline} color={feature?.iconColor} w={5} h={5} />
                   }
-                  iconBg={bgg}
+                  iconBg={iconBg} 
                   text={feature?.text}
                   marginLeft={{ base: '0', md: '4' }}
                 />
@@ -61,9 +62,8 @@ export default function WhyUs() {
             <Image
               rounded="md"
               alt="feature image"
-             // src="https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-             src="/whyUs.png" 
-             objectFit="cover"
+              src="/whyUs.png"
+              objectFit="cover"
             />
           </Flex>
         </SimpleGrid>

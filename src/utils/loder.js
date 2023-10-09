@@ -9,7 +9,7 @@ const Loader = () => {
       justifyContent='center'
       alignItems='center'
     >
-      <Image src={'logo.png'} width='150px' />
+      <Image src={'logo.png'}  alt="Daji & Engineers LLP Logo" width='150px' />
       <Progress size='xs' w='40%' colorScheme='brown' isIndeterminate />
       <HStack>
         <Text fontWeight='300' color='gray.400'>

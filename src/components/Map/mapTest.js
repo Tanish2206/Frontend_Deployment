@@ -264,7 +264,12 @@ export default function MapTest({ondata}) {
             </Autocomplete>
           </Flex>
           <Flex alignItems="center">
-            <Image src="/gps.png" boxSize="50px" style={{ cursor: "pointer" }} />
+            <Image 
+            src="/gps.png" 
+            alt="GPS"
+            boxSize="50px"
+             style={{ cursor: "pointer" }} 
+             />
             <Text
               className="use-my-current-location ms-2"
               onClick={onHandleLocateMe}

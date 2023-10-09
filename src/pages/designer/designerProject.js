@@ -7,7 +7,6 @@ export default function projects() {
       // const result= router.query.name;
   return (
     <>
-     
      <DesignerProject/>
     <Footer/>
     </>

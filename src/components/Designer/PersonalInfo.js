@@ -29,7 +29,7 @@ const PersonalInfo = () => {
     if (api) {
       userData();
     }
-  }, [api]);
+  }, [api, userData]);
 
   const userData = () => {
     if (designerId) {

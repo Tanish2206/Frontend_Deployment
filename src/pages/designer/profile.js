@@ -9,9 +9,7 @@ const Profile = () => {
   const [designer, setDesigner] = useState('');
   const designerId = secureLocalStorage.getItem('designerId');
 
-  useEffect(() => {
-    api && userData();
-  }, [api]);
+ 
 
   const userData = () => {
     if (designerId) {
@@ -30,6 +28,10 @@ const Profile = () => {
         });
     }
   };
+
+  useEffect(() => {
+    api && userData();
+  }, [api,userData]);
 
   return (
     <Box maxWidth="1200px" mx="auto" p="4">

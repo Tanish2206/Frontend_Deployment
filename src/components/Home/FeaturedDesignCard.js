@@ -32,14 +32,15 @@ const router=useRouter();
           overflow="hidden"
           position="relative"
         >
-          <Image
-            //src={elem?.siteImagesUrls[0]}
-            src={elem?.image}
-            objectFit="cover"
-            width="100%"
-            height="100%"
-            onClick={handleRedirect}
-          />
+        <Image
+        src={elem?.image}
+        objectFit="cover"
+        width="100%"
+        height="100%"
+        alt={elem?.title || ""} // Use the title as alt text, or an empty string if there's no title
+        onClick={handleRedirect}
+      />
+      
 
           <Flex
             position="absolute"
