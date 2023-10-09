@@ -25,11 +25,7 @@ const PersonalInfo = () => {
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const specializations = ["Web Development", "Mobile Development", "UI/UX Design", "Data Science"];
 
-  useEffect(() => {
-    if (api) {
-      userData();
-    }
-  }, [api, userData]);
+
 
   const userData = () => {
     if (designerId) {
@@ -47,6 +43,14 @@ const PersonalInfo = () => {
         });
     }
   };
+  
+  useEffect(() => {
+    if (api) {
+      userData();
+    }
+  }, [api, userData]);
+
+ 
 
   const handleEditClick = () => {
     setIsEditing(true);

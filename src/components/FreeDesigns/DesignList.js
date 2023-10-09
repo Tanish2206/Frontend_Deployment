@@ -14,8 +14,8 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 
 const DesignList = ({label, title,authId }) => {
-  const userId = secureLocalStorage.getItem("id");
-  const Authtoken = secureLocalStorage.getItem("authToken");
+  
+  
   const UserData = secureLocalStorage.getItem("user");
   const router = useRouter();
   const [show, setShow] = useState(false);
@@ -154,7 +154,7 @@ if(!(secureLocalStorage.getItem("authToken"))){
      return ;
    }
 
-}, [Authtoken]);
+}, []);
 // login ...............logout ...........Authentication.....
 const handleOpenModal = (step) => {
   setCurrentStep(step);
@@ -264,12 +264,12 @@ const handleBuyNow = useCallback((data, download) => {
     placeOrder(data);
     return ;
   } 
-  if(!Authtoken){
+  if(!(secureLocalStorage.getItem("authToken"))){
  handleOpenModal("signIn");
     setChangeUrl(download);
     return ;
   }
-}, [Authtoken, placeOrder]);
+}, []);
 
 
 

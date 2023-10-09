@@ -5,14 +5,9 @@ import { useState,useEffect } from "react";
 import AuthService from "../utils/AuthService";
 export default function Projects() {
 
-  const Auth = secureLocalStorage.getItem("authToken");
+
   const userId = secureLocalStorage.getItem("id");
   const [userProfileData, setProfileData] = useState({});
-
-  useEffect(() => {
-    getData();
-  }, []);
-
   async function getData() {
     await AuthService.getProfile(userId)
       .then((response) => {
@@ -23,6 +18,11 @@ export default function Projects() {
        
       });
   }
+  useEffect(() => {
+    getData();
+  }, []);
+
+  
   return (
     <>
     <UserProfile

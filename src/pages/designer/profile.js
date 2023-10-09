@@ -31,7 +31,7 @@ const Profile = () => {
 
   useEffect(() => {
     api && userData();
-  }, [api,userData]);
+  }, [api]);
 
   return (
     <Box maxWidth="1200px" mx="auto" p="4">
