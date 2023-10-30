@@ -4,6 +4,7 @@ import '../styles/Home.module.css'
 import { Provider } from 'react-redux';
 import Store from '../utils/Store/store'; 
 import secureLocalStorage from "react-secure-storage";
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
   const storedId = secureLocalStorage.getItem("designerId");
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }) {
         </Box>
       </Flex>
     </ChakraProvider>
+    <Analytics />
     </>
   );
 }

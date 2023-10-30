@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.10.8",
     "@react-google-maps/api": "^2.18.1",
     "@reduxjs/toolkit": "^1.9.5",
+    "@vercel/analytics": "^1.1.1",
     "axios": "^1.4.0",
     "encrypt-storage": "^2.12.16",
     "eslint": "8.39.0",
