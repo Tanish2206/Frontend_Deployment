@@ -11,62 +11,62 @@ import AuthService from "../../utils/AuthService";
 const designs = [
   {
     image:
-      "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign1.jpg",
+      "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/Bedroom+01.jpg",
     title: "Bedroom",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign2.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/Living+Area.jpg",
     title: "Living Area",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign3.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/populerDesignExterior.jpg",
     title: "Exterior"
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign4.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/populerDesignWareHouse.jpg",
     title: "Warehouse",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign5.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/populerDesign+Conference+Room.jpg",
     title: "Conference Hall",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign6.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/Toilet.jpg",
     title: "Washroom",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign7.jpg",
-    title: "Bedroom",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/School+02.jpg",
+    title: "School",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign8.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/populerDesignKidsRoom.jpg",
     title: "Kids Room",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign9.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/bedroom.jpg",
     title: "Hotel Room",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign10.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/Tealogy.jpg",
     title: "Interior",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign11.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/populerDesign360+view+02.jpg",
     title: "3D Floor Plan",
   },
   {
     image:
-    "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/popularDesign12.jpg",
+    "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/PopularDesigns/populerDesignHotel.jpg",
     title: "Hotel Interior",
   },
 ];

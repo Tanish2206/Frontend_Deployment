@@ -10,27 +10,27 @@ import AuthService from "../../utils/AuthService";
 const banners = [
   {
     image:
-      "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/Banner1.jpg",
+      "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/banner_1.jpg",
     title: "",
   },
   {
     image:
-      "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/Banner2.jpg",
+      "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/banner2min.jpg",
     title: "",
   },
   {
     image:
-      "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/Banner3.jpg",
+      "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/banner3min.jpg",
     title: "",
   },
   {
     image:
-      "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/Banner4.jpg",
+      "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/banner4.jpg",
     title: "",
   },
   {
     image:
-      "https://daji-prod-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/Banner5.jpg",
+      "https://daji-prod-2-s3-bucket.s3.ap-south-1.amazonaws.com/Banners/banner5.jpg,",
     title: "",
   },
 ];

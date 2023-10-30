@@ -35,12 +35,8 @@ const Deskboard = () => {
   const [api, setApi] = useState(true);
   const [designer, setDesigner] = useState({});
 
-  useEffect(() => {
-    if (api) {
-      userData();
-    }
-  }, [api, userData]); // Include userData in the dependency array
-  
+
+
   const userData = () => {
     if (storedId) {
       AuthService.getDesignerProfile(storedId 
@@ -59,6 +55,13 @@ const Deskboard = () => {
         });
     }
   };
+  useEffect(() => {
+    if (api) {
+      userData();
+    }
+  }, [api, userData]); // Include userData in the dependency array
+  
+  
   
 
   useEffect(() => {
